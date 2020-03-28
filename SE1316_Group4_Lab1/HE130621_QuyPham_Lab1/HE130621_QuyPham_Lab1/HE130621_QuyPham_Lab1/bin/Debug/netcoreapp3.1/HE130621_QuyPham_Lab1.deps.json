@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "HE130621_QuyPham_Lab1/1.0.0": {
+        "runtime": {
+          "HE130621_QuyPham_Lab1.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "HE130621_QuyPham_Lab1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

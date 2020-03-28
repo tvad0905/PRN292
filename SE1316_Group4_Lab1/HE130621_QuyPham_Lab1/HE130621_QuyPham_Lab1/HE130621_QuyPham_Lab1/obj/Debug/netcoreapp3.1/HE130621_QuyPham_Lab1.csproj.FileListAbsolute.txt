@@ -1,0 +1,11 @@
+D:\Document\Semester5\PRN302\Project\HE130621_QuyPham_Lab1\HE130621_QuyPham_Lab1\bin\Debug\netcoreapp3.1\HE130621_QuyPham_Lab1.exe
+D:\Document\Semester5\PRN302\Project\HE130621_QuyPham_Lab1\HE130621_QuyPham_Lab1\bin\Debug\netcoreapp3.1\HE130621_QuyPham_Lab1.deps.json
+D:\Document\Semester5\PRN302\Project\HE130621_QuyPham_Lab1\HE130621_QuyPham_Lab1\bin\Debug\netcoreapp3.1\HE130621_QuyPham_Lab1.runtimeconfig.json
+D:\Document\Semester5\PRN302\Project\HE130621_QuyPham_Lab1\HE130621_QuyPham_Lab1\bin\Debug\netcoreapp3.1\HE130621_QuyPham_Lab1.runtimeconfig.dev.json
+D:\Document\Semester5\PRN302\Project\HE130621_QuyPham_Lab1\HE130621_QuyPham_Lab1\bin\Debug\netcoreapp3.1\HE130621_QuyPham_Lab1.dll
+D:\Document\Semester5\PRN302\Project\HE130621_QuyPham_Lab1\HE130621_QuyPham_Lab1\bin\Debug\netcoreapp3.1\HE130621_QuyPham_Lab1.pdb
+D:\Document\Semester5\PRN302\Project\HE130621_QuyPham_Lab1\HE130621_QuyPham_Lab1\obj\Debug\netcoreapp3.1\HE130621_QuyPham_Lab1.csprojAssemblyReference.cache
+D:\Document\Semester5\PRN302\Project\HE130621_QuyPham_Lab1\HE130621_QuyPham_Lab1\obj\Debug\netcoreapp3.1\HE130621_QuyPham_Lab1.AssemblyInfoInputs.cache
+D:\Document\Semester5\PRN302\Project\HE130621_QuyPham_Lab1\HE130621_QuyPham_Lab1\obj\Debug\netcoreapp3.1\HE130621_QuyPham_Lab1.AssemblyInfo.cs
+D:\Document\Semester5\PRN302\Project\HE130621_QuyPham_Lab1\HE130621_QuyPham_Lab1\obj\Debug\netcoreapp3.1\HE130621_QuyPham_Lab1.dll
+D:\Document\Semester5\PRN302\Project\HE130621_QuyPham_Lab1\HE130621_QuyPham_Lab1\obj\Debug\netcoreapp3.1\HE130621_QuyPham_Lab1.pdb
