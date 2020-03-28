@@ -1,0 +1,7 @@
+E:\Ki5\PRN292\Thuc Hanh\DemoPE\Q2\bin\Q2.dll.config
+E:\Ki5\PRN292\Thuc Hanh\DemoPE\Q2\bin\Q2.dll
+E:\Ki5\PRN292\Thuc Hanh\DemoPE\Q2\bin\Q2.pdb
+E:\Ki5\PRN292\Thuc Hanh\DemoPE\Q2\obj\Debug\Q2.csproj.CoreCompileInputs.cache
+E:\Ki5\PRN292\Thuc Hanh\DemoPE\Q2\obj\Debug\Q2.dll
+E:\Ki5\PRN292\Thuc Hanh\DemoPE\Q2\obj\Debug\Q2.pdb
+E:\Ki5\PRN292\Thuc Hanh\DemoPE\Q2\obj\Debug\Q2.csprojAssemblyReference.cache

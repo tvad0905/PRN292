@@ -1,0 +1,11 @@
+E:\Ki5\PRN292\Thuc Hanh\DemoPE\Q1\bin\Debug\Q1.exe.config
+E:\Ki5\PRN292\Thuc Hanh\DemoPE\Q1\bin\Debug\Q1.exe
+E:\Ki5\PRN292\Thuc Hanh\DemoPE\Q1\bin\Debug\Q1.pdb
+E:\Ki5\PRN292\Thuc Hanh\DemoPE\Q1\obj\Debug\Q1.csprojAssemblyReference.cache
+E:\Ki5\PRN292\Thuc Hanh\DemoPE\Q1\obj\Debug\Q1.Form1.resources
+E:\Ki5\PRN292\Thuc Hanh\DemoPE\Q1\obj\Debug\Q1.Properties.Resources.resources
+E:\Ki5\PRN292\Thuc Hanh\DemoPE\Q1\obj\Debug\Q1.csproj.GenerateResource.cache
+E:\Ki5\PRN292\Thuc Hanh\DemoPE\Q1\obj\Debug\Q1.csproj.CoreCompileInputs.cache
+E:\Ki5\PRN292\Thuc Hanh\DemoPE\Q1\obj\Debug\Q1.exe
+E:\Ki5\PRN292\Thuc Hanh\DemoPE\Q1\obj\Debug\Q1.pdb
+E:\Ki5\PRN292\Thuc Hanh\DemoPE\Q1\obj\Debug\Q1.formEdit.resources

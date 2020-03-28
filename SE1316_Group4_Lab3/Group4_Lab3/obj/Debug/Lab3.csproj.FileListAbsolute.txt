@@ -1,0 +1,30 @@
+E:\Ki5\PRN292\Thuc Hanh\Lab3\bin\Debug\Lab3.exe.config
+E:\Ki5\PRN292\Thuc Hanh\Lab3\bin\Debug\Lab3.exe
+E:\Ki5\PRN292\Thuc Hanh\Lab3\bin\Debug\Lab3.pdb
+E:\Ki5\PRN292\Thuc Hanh\Lab3\obj\Debug\Lab3.GUI.BookGUI.resources
+E:\Ki5\PRN292\Thuc Hanh\Lab3\obj\Debug\Lab3.GUI.MainGUI.resources
+E:\Ki5\PRN292\Thuc Hanh\Lab3\obj\Debug\Lab3.Properties.Resources.resources
+E:\Ki5\PRN292\Thuc Hanh\Lab3\obj\Debug\Lab3.csproj.GenerateResource.cache
+E:\Ki5\PRN292\Thuc Hanh\Lab3\obj\Debug\Lab3.exe
+E:\Ki5\PRN292\Thuc Hanh\Lab3\obj\Debug\Lab3.pdb
+E:\Ki5\PRN292\Thuc Hanh\Lab3\obj\Debug\Lab3.GUI.AboutGUI.resources
+E:\Ki5\PRN292\Thuc Hanh\Lab3\obj\Debug\Lab3.csprojAssemblyReference.cache
+E:\Ki5\PRN292\Thuc Hanh\Lab3\obj\Debug\Lab3.GUI.BorrowGUI.resources
+E:\Ki5\PRN292\Thuc Hanh\Lab3\obj\Debug\Lab3.GUI.ReserveGUI.resources
+E:\Ki5\PRN292\Thuc Hanh\Lab3\obj\Debug\Lab3.GUI.ReturnGUI.resources
+E:\Ki5\PRN292\Thuc Hanh\Lab3\obj\Debug\Lab3.GUI.BorrowerGUI.resources
+E:\Ki5\PRN292\Thuc Hanh\Lab 3\Lab3\obj\Debug\Lab3.csprojAssemblyReference.cache
+E:\Ki5\PRN292\Thuc Hanh\Lab 3\Lab3\obj\Debug\Lab3.GUI.AboutGUI.resources
+E:\Ki5\PRN292\Thuc Hanh\Lab 3\Lab3\obj\Debug\Lab3.GUI.BorrowGUI.resources
+E:\Ki5\PRN292\Thuc Hanh\Lab 3\Lab3\obj\Debug\Lab3.GUI.BorrowerGUI.resources
+E:\Ki5\PRN292\Thuc Hanh\Lab 3\Lab3\obj\Debug\Lab3.GUI.MainGUI.resources
+E:\Ki5\PRN292\Thuc Hanh\Lab 3\Lab3\obj\Debug\Lab3.GUI.ReserveGUI.resources
+E:\Ki5\PRN292\Thuc Hanh\Lab 3\Lab3\obj\Debug\Lab3.GUI.ReturnGUI.resources
+E:\Ki5\PRN292\Thuc Hanh\Lab 3\Lab3\obj\Debug\Lab3.Properties.Resources.resources
+E:\Ki5\PRN292\Thuc Hanh\Lab 3\Lab3\obj\Debug\Lab3.csproj.GenerateResource.cache
+E:\Ki5\PRN292\Thuc Hanh\Lab 3\Lab3\obj\Debug\Lab3.exe
+E:\Ki5\PRN292\Thuc Hanh\Lab 3\Lab3\obj\Debug\Lab3.pdb
+E:\Ki5\PRN292\Thuc Hanh\Lab 3\Lab3\bin\Debug\Lab3.exe.config
+E:\Ki5\PRN292\Thuc Hanh\Lab 3\Lab3\bin\Debug\Lab3.exe
+E:\Ki5\PRN292\Thuc Hanh\Lab 3\Lab3\bin\Debug\Lab3.pdb
+E:\Ki5\PRN292\Thuc Hanh\Lab 3\Lab3\obj\Debug\Lab3.GUI.BookGUI.resources
