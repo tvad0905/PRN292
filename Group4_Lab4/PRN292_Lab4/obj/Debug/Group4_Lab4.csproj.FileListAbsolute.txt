@@ -173,3 +173,4 @@ E:\Ki5\PRN292\Thuc Hanh\Lab - PRN292\PRN292\Group4_Lab4\PRN292_Lab4\obj\Debug\Gr
 E:\Ki5\PRN292\Thuc Hanh\Lab - PRN292\PRN292\Group4_Lab4\PRN292_Lab4\obj\Debug\Group4_Lab4.csproj.CopyComplete
 E:\Ki5\PRN292\Thuc Hanh\Lab - PRN292\PRN292\Group4_Lab4\PRN292_Lab4\obj\Debug\Group4_Lab4.dll
 E:\Ki5\PRN292\Thuc Hanh\Lab - PRN292\PRN292\Group4_Lab4\PRN292_Lab4\obj\Debug\Group4_Lab4.pdb
+E:\Ki5\PRN292\Thuc Hanh\Lab - PRN292\PRN292\Group4_Lab4\PRN292_Lab4\obj\Debug\Group4_Lab4.csprojAssemblyReference.cache

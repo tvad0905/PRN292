@@ -357,7 +357,7 @@ namespace Group4_Lab4.GUI
 
             }
 
-
+            //add
             if (checkAddBook == true)
             {
 
@@ -365,8 +365,8 @@ namespace Group4_Lab4.GUI
                 {
                     if (txtTitle.Text.Trim().Length == 0)
                     {
-                        lbErrorBook.Text = "Please inpit title";
-                        lbErrorBook.Visible = true;
+                        lbErrorTitleAdd.Text = "Please input title";
+                        lbErrorTitleAdd.Visible = true;
                         return;
                     }
                     bo = new Book();
@@ -509,7 +509,8 @@ namespace Group4_Lab4.GUI
             reload();
 
             lbErrorBook.Visible = false;
-
+            lbErrorTitleAdd.Visible = false;
+            lbErrorCopies.Visible = false;
         }
 
         protected DataTable getCloneGridView(GridView g)
