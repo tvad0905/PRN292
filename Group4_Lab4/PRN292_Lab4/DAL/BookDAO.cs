@@ -11,27 +11,27 @@ namespace Group4_Lab4.DAL
 {
     class BookDAO : DAO
     {
-        public DataTable GetDataTable()
+        static public DataTable GetDataTable()
         {
             String sql = "Select * from Book";
             return GetDataTable(sql);
         }
 
-        public DataTable getBookByTitle(String title)
+        static public DataTable getBookByTitle(String title)
         {
             string sql = "select * from book where title like '%" + title + "%'";
             return GetDataTable(sql);
 
         }
 
-        public DataTable getBookByNum(int num)
+        static public DataTable getBookByNum(int num)
         {
             string sql = "select * from book where booknumber =" + num;
             return GetDataTable(sql);
 
         }
 
-        public bool Insert(Book b)
+        static public bool Insert(Book b)
         {
 
             String sql = "INSERT dbo.Book(title,authors,publisher)" + Environment.NewLine +
@@ -44,7 +44,7 @@ namespace Group4_Lab4.DAL
             return UpdateTable(com);
         }
 
-        public int GetBookNumberMax()
+        static public int GetBookNumberMax()
         {
             DataTable dt = GetDataTable();
             int res;
@@ -60,7 +60,7 @@ namespace Group4_Lab4.DAL
         }
 
 
-        public bool Update(Book b)
+        static public bool Update(Book b)
         {
             String sql = "Update Book set title = @title, authors = @authors, publisher = @publisher where bookNumber = @bookNumber";
             SqlCommand com = new SqlCommand(sql);
@@ -71,7 +71,7 @@ namespace Group4_Lab4.DAL
             return UpdateTable(com);
         }
 
-        public bool Delete(int BookNumber)
+        static public bool Delete(int BookNumber)
         {
             String sql = "delete from Book where bookNumber = @bookNumber";
             SqlCommand com = new SqlCommand(sql);

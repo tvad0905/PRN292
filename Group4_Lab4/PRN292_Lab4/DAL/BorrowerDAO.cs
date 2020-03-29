@@ -12,13 +12,13 @@ namespace Group4_Lab4.DAL
 {
     class BorrowerDAO : DAO
     {
-        public DataTable getAllMember()
+        static public DataTable getAllMember()
         {
             String sql = "Select * from Borrower";
             return GetDataTable(sql);
         }
 
-        public bool Insert(Borrower b)
+        static public bool Insert(Borrower b)
         {
             SqlCommand cmd = new SqlCommand("INSERT INTO [dbo].[Borrower]([name],[sex],[address],[telephone],[email]) VALUES (@n, @s, @a, @t, @e)");
             //cmd.Parameters.AddWithValue("@bn", b.BorrowerNumber);
@@ -30,20 +30,20 @@ namespace Group4_Lab4.DAL
             return UpdateTable(cmd);
         }
 
-        public int GetBorrowerNumberMax()
+        static public int GetBorrowerNumberMax()
         {
             DataTable dt = getAllMember();
             if (dt.Rows.Count == 0) return 0;
             else return (int)(dt.Compute("max(borrowerNumber)", ""));
         }
 
-        public bool Delete(int b)
+        static public bool Delete(int b)
         {
                 SqlCommand cmd = new SqlCommand("DELETE FROM [dbo].[Borrower] WHERE borrowerNumber = @b");
                 cmd.Parameters.AddWithValue("@b", b);
          return UpdateTable(cmd);
     }
-        public bool Edit(Borrower b)
+        static public bool Edit(Borrower b)
         {
             SqlCommand cmd = new SqlCommand("UPDATE [dbo].[Borrower]  SET [name] = @n ,[sex] = @s,[address] =@a " +
                 ",[telephone] =@t  ,[email] =@e WHERE borrowerNumber=@b");
@@ -56,7 +56,7 @@ namespace Group4_Lab4.DAL
             return UpdateTable(cmd);
         }
 
-        public Borrower GetBorrower(int borrowNumber)
+        static public Borrower GetBorrower(int borrowNumber)
         {
             String sql = " SELECT * FROM Borrower WHERE borrowerNumber = " + borrowNumber;
             DataTable dt = GetDataTable(sql);

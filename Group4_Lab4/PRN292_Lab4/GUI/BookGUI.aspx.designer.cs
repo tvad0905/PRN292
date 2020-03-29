@@ -96,6 +96,15 @@ namespace Group4_Lab4.GUI
         protected global::System.Web.UI.WebControls.TextBox txtTitle;
 
         /// <summary>
+        /// lbErrorTitleAdd control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbErrorTitleAdd;
+
+        /// <summary>
         /// Label4 control.
         /// </summary>
         /// <remarks>
@@ -186,15 +195,6 @@ namespace Group4_Lab4.GUI
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl copyP;
 
         /// <summary>
-        /// lbErrorCopies control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbErrorCopies;
-
-        /// <summary>
         /// Label6 control.
         /// </summary>
         /// <remarks>
@@ -265,6 +265,15 @@ namespace Group4_Lab4.GUI
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtTypecopy;
+
+        /// <summary>
+        /// lbErrorCopies control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbErrorCopies;
 
         /// <summary>
         /// Label9 control.

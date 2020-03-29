@@ -25,7 +25,7 @@ namespace Group4_Lab4.GUI
 
         private void View()
         {
-            DataTable dt = new ReserveDAO().SelectDS(int.Parse(txtMemberCode.Text), 'R');
+            DataTable dt = ReserveDAO.SelectDS(int.Parse(txtMemberCode.Text), 'R');
 
             GridView1.DataSource = dt;
             GridView1.DataBind();
@@ -96,7 +96,7 @@ namespace Group4_Lab4.GUI
                 txtMemberCode.Focus();
                 return;
             }
-            Borrower b = new BorrowerDAO().GetBorrower(borrowerNumber);
+            Borrower b = BorrowerDAO.GetBorrower(borrowerNumber);
             if (b == null)
             {
                 lbError.Visible = true;
@@ -120,7 +120,7 @@ namespace Group4_Lab4.GUI
         private bool checkCondition(int borrowerNumber, int bookNumber)
         {
             lbError.Visible = false;
-            DataTable dt = new CopyDAO().GetAllCopyByBookNumber(bookNumber);
+            DataTable dt = CopyDAO.GetAllCopyByBookNumber(bookNumber);
             if (dt.Rows.Count == 0)
             {
                 lbError.Visible = true;
@@ -156,7 +156,7 @@ namespace Group4_Lab4.GUI
             txtTitle.Text = "";
             int bookNumber = int.Parse(txtBookNumber.Text);
             int borrowerNumber = int.Parse(txtMemberCode.Text);
-            DataTable dt1 = new BookDAO().getBookByNum(bookNumber);
+            DataTable dt1 = BookDAO.getBookByNum(bookNumber);
             foreach (DataRow dr in dt1.Rows)
             {
                 txtTitle.Text = dr["title"].ToString();
@@ -172,7 +172,7 @@ namespace Group4_Lab4.GUI
         protected void btReserve_Click(object sender, EventArgs e)
         {
             Reservation rs = new Reservation(int.Parse(txtMemberCode.Text), int.Parse(txtBookNumber.Text), Calendar1.SelectedDate);
-            new ReserveDAO().Insert(rs);
+            ReserveDAO.Insert(rs);
 
             View();
 

@@ -99,7 +99,7 @@ namespace Group4_Lab4.GUI
                 txtMemberCode.Focus();
                 return;
             }
-            Borrower b = new BorrowerDAO().GetBorrower(borrowerNumber);
+            Borrower b = BorrowerDAO.GetBorrower(borrowerNumber);
             if (b == null)
             {
                 lbError.Visible = true;
@@ -117,16 +117,15 @@ namespace Group4_Lab4.GUI
 
         private void Return(CirculatedCopy cc)
         {
-            CirculatedCopyDAO ccd = new CirculatedCopyDAO();
-            ccd.Update(cc);
+            CirculatedCopyDAO.Update(cc);
 
-            Copy c = new CopyDAO().GetCopy(cc.CopyNumber);
+            Copy c = CopyDAO.GetCopy(cc.CopyNumber);
 
             // if copy is reference
             if (c.Type == 'R') return;
             // update type = 'A' in copy
             c.Type = 'A';
-            new CopyDAO().Update(c);
+            CopyDAO.Update(c);
 
         }
 

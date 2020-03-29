@@ -101,11 +101,11 @@ namespace Group4_Lab4.GUI
             c.Telephone = txtPhone.Text;
             c.Email = txtEmail.Text;
             if (add == 1)
-                new BorrowerDAO().Insert(c);
+                BorrowerDAO.Insert(c);
             else
             {
 
-                new BorrowerDAO().Edit(c);
+                BorrowerDAO.Edit(c);
             }
             ObjectDataSource1.Select();
             GridView1.DataBind();

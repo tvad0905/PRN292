@@ -50,6 +50,8 @@
                 <td>
                     <div class="subFirstPart">
                         <asp:Label ID="Label3" class="compSub" runat="server" Text="Title"></asp:Label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<asp:TextBox ID="txtTitle" runat="server" Width="242px" ReadOnly="True"></asp:TextBox>
+                        &nbsp;&nbsp;&nbsp;
+                        <asp:Label ID="lbErrorTitleAdd" runat="server" Text="Label" Visible="False"></asp:Label>
                         <br />
                         <br />
                         <br />
@@ -94,8 +96,7 @@
         <div class="firstPart">
             <h2>List of copies</h2>
             <p>
-                <asp:Label ID="lbErrorCopies" runat="server" Font-Size="Larger" ForeColor="#CC0000" Text="lbError" Visible="False"></asp:Label>
-            </p>
+                &nbsp;</p>
             <p>&nbsp;</p>
 
             <asp:Label ID="Label6" runat="server" Text="Book number"></asp:Label>
@@ -139,6 +140,8 @@
                 <td>
                     <div class="subFirstPart">
                         <asp:Label ID="Label8" class="compSub" runat="server" Text="Type"></asp:Label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<asp:TextBox ID="txtTypecopy" runat="server" Width="239px" ReadOnly="True"></asp:TextBox>
+                        &nbsp;&nbsp;&nbsp;
+                        <asp:Label ID="lbErrorCopies" runat="server" Text="Label" Visible="False"></asp:Label>
                         <br />
                         <br />
                         <br />

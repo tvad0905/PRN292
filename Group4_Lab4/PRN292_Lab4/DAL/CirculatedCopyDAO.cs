@@ -11,13 +11,13 @@ namespace Group4_Lab4.DAL
 {
     class CirculatedCopyDAO : DAO
     {
-        public DataTable GetBorrowedCopies(int borrowerNumber)
+        static public DataTable GetBorrowedCopies(int borrowerNumber)
         {
             String sql = "SELECT * FROM [CirculatedCopy] WHERE borrowerNumber = " + borrowerNumber + " and returnedDate is null ORDER BY returnedDate asc";
             return GetDataTable(sql);
         }
 
-        public void Update(CirculatedCopy cc)
+        static public void Update(CirculatedCopy cc)
         {
             SqlCommand cmd = new SqlCommand("UPDATE CirculatedCopy SET copyNumber = @cn , borrowerNumber = @bn, borrowedDate = @bd, dueDate = @dd, returnedDate = @rd, fineAmount = @fa WHERE ID = @i ");
             cmd.Parameters.AddWithValue("@cn", cc.CopyNumber);
@@ -29,7 +29,7 @@ namespace Group4_Lab4.DAL
             cmd.Parameters.AddWithValue("@i", cc.Id);
             UpdateTable(cmd);
         }
-        public bool Insert(CirculatedCopy cc)
+        static public bool Insert(CirculatedCopy cc)
         {
 
             String sql = "INSERT dbo.CirculatedCopy(copyNumber, borrowerNumber, borrowedDate, dueDate)" + Environment.NewLine +

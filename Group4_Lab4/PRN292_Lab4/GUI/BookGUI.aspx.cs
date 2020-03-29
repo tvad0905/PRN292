@@ -13,8 +13,6 @@ namespace Group4_Lab4.GUI
 {
     public partial class BookCopy : System.Web.UI.Page
     {
-        BookDAO bd = new BookDAO();
-        CopyDAO cd = new CopyDAO();
         //set static for reload page each time
         static Book bo;
         static Copy co;
@@ -35,7 +33,7 @@ namespace Group4_Lab4.GUI
             {
                 copyP.Style.Add("display", "none");
                 copyExist = false;
-                DataTable dt = bd.GetDataTable();
+                DataTable dt = BookDAO.GetDataTable();
 
                 GridView1.DataSource = dt;
                 ViewState["data1"] = dt;
@@ -62,7 +60,7 @@ namespace Group4_Lab4.GUI
                 DataTable dt;
                 if (Session["sortdata1"] == null)
                 {
-                    dt = bd.GetDataTable();
+                    dt = BookDAO.GetDataTable();
 
                 }
                 else
@@ -85,7 +83,7 @@ namespace Group4_Lab4.GUI
                 DataTable dt;
                 if (Session["sortdata2"] == null)
                 {
-                    dt = cd.GetAllCopyByBookNumber(bo.BookNumber);
+                    dt = CopyDAO.GetAllCopyByBookNumber(bo.BookNumber);
                 }
                 else
                 {
@@ -150,7 +148,7 @@ namespace Group4_Lab4.GUI
                 {
                     GridViewRow gvRow = GridView1.Rows[index];
                     int bookNum = Int32.Parse(gvRow.Cells[2].Text.ToString());
-                    if (bd.Delete(bookNum))
+                    if (BookDAO.Delete(bookNum))
                     {
                         reload();
                     }
@@ -164,7 +162,7 @@ namespace Group4_Lab4.GUI
                     GridViewRow gridViewRow = GridView2.Rows[index];
 
                     int copyNum = Int32.Parse(gridViewRow.Cells[2].Text.ToString());
-                    if (cd.Delete(copyNum))
+                    if (CopyDAO.Delete(copyNum))
                     {
                         reload();
                     }
@@ -189,7 +187,7 @@ namespace Group4_Lab4.GUI
                 return;
             }
 
-            DataTable dt = bd.getBookByTitle(filter);
+            DataTable dt = BookDAO.getBookByTitle(filter);
             GridView1.DataSource = dt;
             ViewState["data1"] = dt;
             GridView1.DataBind();
@@ -309,15 +307,15 @@ namespace Group4_Lab4.GUI
                 {
                     if (txtTitle.Text.Trim().Length == 0)
                     {
-                        lbErrorBook.Text = "Please inpit title";
-                        lbErrorBook.Visible = true;
+                        lbErrorTitleAdd.Text = "Please input title";
+                        lbErrorTitleAdd.Visible = true;
                         return;
                     }
                     bo.Title = txtTitle.Text;
                     bo.Authors = txtAuthor.Text;
                     bo.Publisher = txtPublisher.Text;
 
-                    if (!bd.Update(bo))
+                    if (!BookDAO.Update(bo))
                     {
                         return;
                     }
@@ -343,7 +341,7 @@ namespace Group4_Lab4.GUI
                     co.Price = double.Parse(txtPrice.Text);
                     co.BookNumber = int.Parse(GridView2.SelectedRow.Cells[3].Text);
                     co.CopyNumber = int.Parse(GridView2.SelectedRow.Cells[2].Text);
-                    if (!cd.Update(co))
+                    if (!CopyDAO.Update(co))
                     {
                         return;
                     }
@@ -372,11 +370,11 @@ namespace Group4_Lab4.GUI
                         return;
                     }
                     bo = new Book();
-                    bo.BookNumber = bd.GetBookNumberMax() + 1;
+                    bo.BookNumber = BookDAO.GetBookNumberMax() + 1;
                     bo.Title = txtTitle.Text;
                     bo.Authors = txtAuthor.Text;
                     bo.Publisher = txtPublisher.Text;
-                    if (!bd.Insert(bo))
+                    if (!BookDAO.Insert(bo))
                     {
                         return;
                     }
@@ -405,13 +403,13 @@ namespace Group4_Lab4.GUI
                         return;
                     }
                     co = new Copy();
-                    co.CopyNumber = cd.GetCopyNumberMax() + 1;
+                    co.CopyNumber = CopyDAO.GetCopyNumberMax() + 1;
                     co.BookNumber = Int32.Parse(txtBookNumberCopies.Text);
-                    co.SequenceNumber = cd.GetSequenceNumberMax(co.BookNumber) + 1;
+                    co.SequenceNumber = CopyDAO.GetSequenceNumberMax(co.BookNumber) + 1;
                     co.Type = char.Parse(type);
                     if(co.Type != 'A' && co.Type != 'F')
                     co.Price = double.Parse(txtPrice.Text.Trim().Length == 0 ? "0" : txtPrice.Text.Trim());
-                    if (!cd.Insert(co))
+                    if (!CopyDAO.Insert(co))
                     {
                         return;
                     }

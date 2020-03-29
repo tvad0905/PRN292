@@ -11,7 +11,7 @@ namespace Group4_Lab4.DAL
 {
     class CopyDAO : DAO
     {
-        public Copy GetCopy(int CopyNumber)
+        static public Copy GetCopy(int CopyNumber)
         {
             String sql = "SELECT * FROM Copy WHERE copyNumber =  " + CopyNumber;
             DataTable dt = GetDataTable(sql);
@@ -23,7 +23,7 @@ namespace Group4_Lab4.DAL
             return null;
         }
 
-        public bool Update(Copy c)
+        static public bool Update(Copy c)
         {
             SqlCommand cmd = new SqlCommand("UPDATE Copy SET bookNumber = @bn, sequenceNumber = @sn, type = @t, price = @p WHERE copyNumber = @cn ");
             cmd.Parameters.AddWithValue("@bn", c.BookNumber);
@@ -34,19 +34,19 @@ namespace Group4_Lab4.DAL
             return UpdateTable(cmd);
         }
 
-        public DataTable GetAllCopyByBookNumber(int bookNumber)
+        static public DataTable GetAllCopyByBookNumber(int bookNumber)
         {
             String sql = "SELECT * FROM Copy WHERE bookNumber = " + bookNumber;
             return GetDataTable(sql);
         }
 
-        public DataTable GetDataTable()
+        static public DataTable GetDataTable()
         {
             String sql = "Select * from Copy";
             return GetDataTable(sql);
         }
 
-        public int GetCopyNumberMax()
+        static public int GetCopyNumberMax()
         {
             DataTable dt = GetDataTable();
             int res;
@@ -61,7 +61,7 @@ namespace Group4_Lab4.DAL
             return res;
         }
 
-        public int GetSequenceNumberMax(int bookNumber)
+        static public int GetSequenceNumberMax(int bookNumber)
         {
             DataTable dt = GetAllCopyByBookNumber(bookNumber);
             int res;
@@ -76,7 +76,7 @@ namespace Group4_Lab4.DAL
             return res;
         }
 
-        public bool Insert(Copy c)
+        static public bool Insert(Copy c)
         {
 
             String sql = "INSERT dbo.Copy(bookNumber,sequenceNumber,type, price)" + Environment.NewLine +
@@ -89,7 +89,7 @@ namespace Group4_Lab4.DAL
             return UpdateTable(com);
         }
 
-        public bool Delete(int CopyNumber)
+        static public bool Delete(int CopyNumber)
         {
             String sql = "delete from Copy where copyNumber = @copyNumber";
             SqlCommand com = new SqlCommand(sql);

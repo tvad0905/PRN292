@@ -15,7 +15,6 @@ namespace Group4_Lab4.GUI
         //DataView dv;
         Copy c;
         Reservation r;
-        CirculatedCopyDAO copyDAO;
 
         enum errorBorrow
         {
@@ -29,14 +28,19 @@ namespace Group4_Lab4.GUI
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            copyDAO = new CirculatedCopyDAO();
-            displayButtons(1);
-            Calendar1.SelectedDate = DateTime.Now;
-            lblError.Visible = false;
+           // copyDAO = new CirculatedCopyDAO();
+            if (!IsPostBack)
+            {
+                
+                displayButtons(1);
+                Calendar1.SelectedDate = DateTime.Now;
+                Calendar1.TodaysDate = DateTime.Now;
+                lblError.Visible = false;
+            }    
         }
         public void showData()
         {
-            DataTable dt =  copyDAO.GetBorrowedCopies(int.Parse(txtBorrowerNumber.Text));
+            DataTable dt =  CirculatedCopyDAO.GetBorrowedCopies(int.Parse(txtBorrowerNumber.Text));
             lblNoOfBorrowedCopy.Text = dt.Rows.Count.ToString();
 
             DataView dv = new DataView(dt);
@@ -60,7 +64,7 @@ namespace Group4_Lab4.GUI
                 txtBorrowerNumber.Focus();
                 return;
             }
-            Borrower b = new BorrowerDAO().GetBorrower(borrowerNumber);
+            Borrower b = BorrowerDAO.GetBorrower(borrowerNumber);
             if (b == null)
             {
                 lblError.Visible = true;
@@ -142,8 +146,8 @@ namespace Group4_Lab4.GUI
 
             CirculatedCopy cc = new CirculatedCopy(int.Parse(txtCopyNumber.Text), int.Parse(txtBorrowerNumber.Text),
                 receiveDate, dueDate);
-            c = new CopyDAO().GetCopy(int.Parse(txtCopyNumber.Text));
-            r = r = new ReserveDAO().GetFirstReservation(c.BookNumber);
+            c = CopyDAO.GetCopy(int.Parse(txtCopyNumber.Text));
+            r = r = ReserveDAO.GetFirstReservation(c.BookNumber);
             borrow(cc, c, r);
 
             showData();
@@ -154,19 +158,19 @@ namespace Group4_Lab4.GUI
         {
             // Insert borrow record
             if (cc == null) return;
-            new CirculatedCopyDAO().Insert(cc);
+            CirculatedCopyDAO.Insert(cc);
 
             // update type = 'B' at Copy
             if (c == null) return;
             c.Type = 'B';
-            new CopyDAO().Update(c);
+            CopyDAO.Update(c);
 
 
             // update status = 'A' at Reservation
             if (r == null) 
                 return;
             r.Status = 'A';
-            new ReserveDAO().Update(r);
+            ReserveDAO.Update(r);
 
 
         }
@@ -223,14 +227,14 @@ namespace Group4_Lab4.GUI
             r = null;
 
 
-            c = new CopyDAO().GetCopy(copyNumber);
+            c = CopyDAO.GetCopy(copyNumber);
             if (c == null) return errorBorrow.CopyNotExist;
             if (c.Type == 'R') return errorBorrow.CopyReferenced;
             if (c.Type == 'B') return errorBorrow.CopyBorrowed;
 
             // Check if this book is reserved by others and you are not at the first of the reservation list
             int bookNumber = c.BookNumber;
-            r = new ReserveDAO().GetFirstReservation(bookNumber);
+            r = ReserveDAO.GetFirstReservation(bookNumber);
             if (r != null && r.BorrowerNumber != borrowerNumber) return errorBorrow.CopyReserved;
                
             return errorBorrow.OK;

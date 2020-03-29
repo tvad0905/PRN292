@@ -11,7 +11,7 @@ namespace Group4_Lab4.DAL
 {
     class ReserveDAO : DAO
     {
-        public bool Insert(Reservation r)
+        static public bool Insert(Reservation r)
         {
 
             String sql = "INSERT dbo.Reservation(borrowerNumber,bookNumber,date, status)" + Environment.NewLine +
@@ -24,7 +24,7 @@ namespace Group4_Lab4.DAL
             return UpdateTable(com);
         }
 
-        public bool Update(Reservation r)
+        static public bool Update(Reservation r)
         {
 
             String sql = "Update [Reservation] set borrowerNumber = @brn, bookNumber = @bnn, date = @d, status = @s where id = @i ";
@@ -38,7 +38,7 @@ namespace Group4_Lab4.DAL
         }
 
 
-        public Reservation GetFirstReservation(int bookNumber)
+        static public Reservation GetFirstReservation(int bookNumber)
         {
             String sql = "SELECT TOP (1) * FROM [Reservation] WHERE bookNumber = " + bookNumber + " and status = 'R' ORDER BY date asc";
             DataTable dt = GetDataTable(sql);
@@ -51,7 +51,7 @@ namespace Group4_Lab4.DAL
             return null;
         }
 
-        public DataTable SelectDS(int borrowerNumber, char c)
+        static public DataTable SelectDS(int borrowerNumber, char c)
         {
             String sql = "SELECT * FROM [Reservation] WHERE status = '"+c+"' and borrowerNumber = " + borrowerNumber;
             return GetDataTable(sql);
