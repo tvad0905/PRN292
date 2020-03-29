@@ -166,8 +166,9 @@ namespace Group4_Lab4.GUI
                 cc.FineAmount = fine;
 
                 Return(cc);
-                
-            
+
+            //SqlDataSource1.DataBind();
+            GridView1.DataBind();
 
             displayButtons(1);
         }

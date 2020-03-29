@@ -52,7 +52,7 @@
                     <asp:Label ID="Label3" runat="server" Text="Name"></asp:Label>
                 </td>
                 <td class="auto-style4">
-                    <asp:TextBox ID="txtName" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtName" runat="server" ReadOnly="True"></asp:TextBox>
                 </td>
                 <td class="auto-style5">&nbsp;</td>
             </tr>
