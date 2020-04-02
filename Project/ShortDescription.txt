@@ -1,0 +1,12 @@
+Miêu tả ngắn gọn hế thống : Khởi chạy ban đầu là giao diện người dùng. 
+	(Nếu login với admin thì sẽ là giao diện admin)
+		- Tiếp theo người dùng sẽ chọn album, số lượng.
+		- Khi checkout sẽ yêu cầu người dùng login or register
+			+ nếu đã đăng nhập trc đó thì sẽ ko cần yêu cầu
+		- Checkout sẽ hiển thị thông tin người dùng và chi tiết về order 
+		(bao gôm thông tin người nhận hàng, nơi nhận hàng, thông tin liên hệ)
+	- Phía giao diện admin thì sẽ có quyền thêm sửa xóa edit albums
+
+- Hệ thống được dùng như 1 app đặt hàng AlbumMusic, người dùng sẽ chọn album, nhập địa chỉ 
+và thông tin người nhận. Cửa hàng sẽ follow thông tin để ship.
+		

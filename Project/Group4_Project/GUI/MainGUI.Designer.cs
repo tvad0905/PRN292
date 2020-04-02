@@ -55,7 +55,7 @@
             this.aboutToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(968, 58);
+            this.menuStrip1.Size = new System.Drawing.Size(837, 58);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -71,32 +71,32 @@
             // 
             this.memberToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("memberToolStripMenuItem.Image")));
             this.memberToolStripMenuItem.Name = "memberToolStripMenuItem";
-            this.memberToolStripMenuItem.Size = new System.Drawing.Size(114, 54);
-            this.memberToolStripMenuItem.Text = "Member";
+            this.memberToolStripMenuItem.Size = new System.Drawing.Size(134, 54);
+            this.memberToolStripMenuItem.Text = "My Account";
             this.memberToolStripMenuItem.Click += new System.EventHandler(this.memberToolStripMenuItem_Click);
             // 
             // borrowToolStripMenuItem
             // 
             this.borrowToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("borrowToolStripMenuItem.Image")));
             this.borrowToolStripMenuItem.Name = "borrowToolStripMenuItem";
-            this.borrowToolStripMenuItem.Size = new System.Drawing.Size(107, 54);
-            this.borrowToolStripMenuItem.Text = "Borrow";
+            this.borrowToolStripMenuItem.Size = new System.Drawing.Size(118, 54);
+            this.borrowToolStripMenuItem.Text = "Updating";
             this.borrowToolStripMenuItem.Click += new System.EventHandler(this.borrowToolStripMenuItem_Click);
             // 
             // returnToolStripMenuItem
             // 
             this.returnToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("returnToolStripMenuItem.Image")));
             this.returnToolStripMenuItem.Name = "returnToolStripMenuItem";
-            this.returnToolStripMenuItem.Size = new System.Drawing.Size(104, 54);
-            this.returnToolStripMenuItem.Text = "Return";
+            this.returnToolStripMenuItem.Size = new System.Drawing.Size(118, 54);
+            this.returnToolStripMenuItem.Text = "Updating";
             this.returnToolStripMenuItem.Click += new System.EventHandler(this.returnToolStripMenuItem_Click);
             // 
             // reserveToolStripMenuItem
             // 
             this.reserveToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("reserveToolStripMenuItem.Image")));
             this.reserveToolStripMenuItem.Name = "reserveToolStripMenuItem";
-            this.reserveToolStripMenuItem.Size = new System.Drawing.Size(109, 54);
-            this.reserveToolStripMenuItem.Text = "Reserve";
+            this.reserveToolStripMenuItem.Size = new System.Drawing.Size(118, 54);
+            this.reserveToolStripMenuItem.Text = "Updating";
             this.reserveToolStripMenuItem.Click += new System.EventHandler(this.reserveToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
@@ -112,11 +112,11 @@
             // 
             // toolStripContainer1.ContentPanel
             // 
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(968, 515);
+            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(837, 515);
             this.toolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.toolStripContainer1.Location = new System.Drawing.Point(0, 0);
             this.toolStripContainer1.Name = "toolStripContainer1";
-            this.toolStripContainer1.Size = new System.Drawing.Size(968, 573);
+            this.toolStripContainer1.Size = new System.Drawing.Size(837, 573);
             this.toolStripContainer1.TabIndex = 1;
             this.toolStripContainer1.Text = "toolStripContainer1";
             // 
@@ -128,7 +128,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(968, 573);
+            this.ClientSize = new System.Drawing.Size(837, 573);
             this.Controls.Add(this.toolStripContainer1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainGUI";

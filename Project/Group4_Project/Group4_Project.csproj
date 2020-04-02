@@ -47,13 +47,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL\AccountDAO.cs" />
     <Compile Include="DAL\AlbumDAO.cs" />
     <Compile Include="DAL\ArtistDAO.cs" />
     <Compile Include="DAL\DAO.cs" />
     <Compile Include="DAL\GenreDAO.cs" />
+    <Compile Include="DAL\OrderDAO.cs" />
+    <Compile Include="DAL\OrderDetailDAO.cs" />
+    <Compile Include="DTL\Account.cs" />
     <Compile Include="DTL\Album.cs" />
     <Compile Include="DTL\Artists.cs" />
     <Compile Include="DTL\Genres.cs" />
+    <Compile Include="DTL\Order.cs" />
+    <Compile Include="DTL\OrderDetail.cs" />
     <Compile Include="GUI\AboutGUI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,11 +78,17 @@
     <Compile Include="GUI\MainGUI.Designer.cs">
       <DependentUpon>MainGUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\MyCartGUI.cs">
+    <Compile Include="GUI\MyAccountGUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\MyCartGUI.Designer.cs">
-      <DependentUpon>MyCartGUI.cs</DependentUpon>
+    <Compile Include="GUI\MyAccountGUI.Designer.cs">
+      <DependentUpon>MyAccountGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\MyCartForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MyCartForm.Designer.cs">
+      <DependentUpon>MyCartForm.cs</DependentUpon>
     </Compile>
     <Compile Include="LibraryDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -94,8 +106,11 @@
     <EmbeddedResource Include="GUI\MainGUI.resx">
       <DependentUpon>MainGUI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\MyCartGUI.resx">
-      <DependentUpon>MyCartGUI.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\MyAccountGUI.resx">
+      <DependentUpon>MyAccountGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MyCartForm.resx">
+      <DependentUpon>MyCartForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

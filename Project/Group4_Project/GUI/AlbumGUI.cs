@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Group4_Project.DAL;
+using Lab3.DTL;
 
 namespace Group4_Project.GUI
 {
@@ -18,12 +19,15 @@ namespace Group4_Project.GUI
     {
         DataTable dt_list = new DataTable();
         int check = 0;
+        int accountid = 0;
+        Account a = new Account(2, "Quan", "Nguyen", "Ha Noi", "Ha Noi", "Hoa Lac", "Viet Nam", "0966 848 112","quannd@gmail.com", "1");
         public AlbumGUI()
         {
             dt_list.Columns.Add(new DataColumn("albumid", typeof(int)));
             dt_list.Columns.Add(new DataColumn("title", typeof(string)));
             dt_list.Columns.Add(new DataColumn("price", typeof(float)));
             dt_list.Columns.Add(new DataColumn("albumurl", typeof(string)));
+            dt_list.Columns.Add(new DataColumn("amount", typeof(int)));
 
             InitializeComponent();
             //get Genres
@@ -59,6 +63,7 @@ namespace Group4_Project.GUI
 
         public void loadData()
         {
+            lbName.Text = "Hello, " + a.firstname + " " + a.lastname;
             check++;
             try
             {
@@ -90,21 +95,35 @@ namespace Group4_Project.GUI
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (dataGridView1.Columns[e.ColumnIndex] is DataGridViewButtonColumn && e.RowIndex >= 0)
+            if (dataGridView1.Columns[e.ColumnIndex] is DataGridViewButtonColumn && e.RowIndex >= 0 )
             {
-                DataRow rd = dt_list.NewRow();
-                rd[0] = int.Parse(dataGridView1.Rows[e.RowIndex].Cells["albumid"].Value.ToString());
-                rd[1] = dataGridView1.Rows[e.RowIndex].Cells["title"].Value.ToString();
-                rd[2] = float.Parse(dataGridView1.Rows[e.RowIndex].Cells["price"].Value.ToString());
-                rd[3] = dataGridView1.Rows[e.RowIndex].Cells["albumurl"].Value.ToString();
-                dt_list.Rows.Add(rd);
+                bool check = true;
+                foreach (DataRow rd1 in dt_list.Rows)
+                {
+                    if (rd1["albumid"].ToString() == dataGridView1.Rows[e.RowIndex].Cells["albumid"].Value.ToString())
+                    {
+                        rd1["amount"] = int.Parse(rd1["amount"].ToString()) + 1;
+                        check = false;
+                        break;
+                    }
+                }
+                if (check)
+                {
+                    DataRow rd = dt_list.NewRow();
+                    rd[0] = int.Parse(dataGridView1.Rows[e.RowIndex].Cells["albumid"].Value.ToString());
+                    rd[1] = dataGridView1.Rows[e.RowIndex].Cells["title"].Value.ToString();
+                    rd[2] = float.Parse(dataGridView1.Rows[e.RowIndex].Cells["price"].Value.ToString());
+                    rd[3] = dataGridView1.Rows[e.RowIndex].Cells["albumurl"].Value.ToString();
+                    rd[4] = 1;
+                    dt_list.Rows.Add(rd);
+                }
                 MessageBox.Show("Add Successfully !!!");
             }
         }
 
         private void btMyCart_Click(object sender, EventArgs e)
         {
-            MyCartGUI mc = new MyCartGUI(dt_list);
+            MyCartForm mc = new MyCartForm(dt_list, a);
             mc.ShowDialog();
         }
     }

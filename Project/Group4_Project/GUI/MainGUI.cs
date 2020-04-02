@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Lab3.GUI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -44,13 +45,13 @@ namespace Group4_Project.GUI
 
         private void memberToolStripMenuItem_Click(object sender, EventArgs e)
         {
-          //  BorrowerGUI m = new BorrowerGUI();
-           // embed(toolStripContainer1.ContentPanel, m);
+            MyAccountGUI m = new MyAccountGUI();
+            embed(toolStripContainer1.ContentPanel, m);
         }
 
         private void borrowToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //BorrowGUI m = new BorrowGUI();
+            //MyCartGUI  m = new MyCartGUI();
             //embed(toolStripContainer1.ContentPanel, m);
         }
 

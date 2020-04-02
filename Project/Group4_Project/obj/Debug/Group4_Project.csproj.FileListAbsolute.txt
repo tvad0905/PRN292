@@ -10,4 +10,5 @@ E:\Ki5\PRN292\Thuc Hanh\Lab - PRN292\PRN292\Project\Group4_Project\bin\Debug\Lab
 E:\Ki5\PRN292\Thuc Hanh\Lab - PRN292\PRN292\Project\Group4_Project\bin\Debug\Lab3.exe
 E:\Ki5\PRN292\Thuc Hanh\Lab - PRN292\PRN292\Project\Group4_Project\bin\Debug\Lab3.pdb
 E:\Ki5\PRN292\Thuc Hanh\Lab - PRN292\PRN292\Project\Group4_Project\obj\Debug\Group4_Project.csprojAssemblyReference.cache
-E:\Ki5\PRN292\Thuc Hanh\Lab - PRN292\PRN292\Project\Group4_Project\obj\Debug\Group4_Project.GUI.MyCartGUI.resources
+E:\Ki5\PRN292\Thuc Hanh\Lab - PRN292\PRN292\Project\Group4_Project\obj\Debug\Group4_Project.GUI.MyCartForm.resources
+E:\Ki5\PRN292\Thuc Hanh\Lab - PRN292\PRN292\Project\Group4_Project\obj\Debug\Lab3.GUI.MyAccountGUI.resources
