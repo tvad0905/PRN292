@@ -43,14 +43,22 @@
             this.btClose = new System.Windows.Forms.Button();
             this.btCheckOut = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.btEdit = new System.Windows.Forms.Button();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtPhone = new System.Windows.Forms.TextBox();
+            this.txtCountry = new System.Windows.Forms.TextBox();
+            this.txtState = new System.Windows.Forms.TextBox();
+            this.txtCity = new System.Windows.Forms.TextBox();
             this.txtAddress = new System.Windows.Forms.TextBox();
+            this.txtLastName = new System.Windows.Forms.TextBox();
             this.txtFirstName = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -58,25 +66,17 @@
             this.txtTotalAmount = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btBack = new System.Windows.Forms.Button();
-            this.btSubmit = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.circulatedCopyTableAdapter1 = new Group4_Project.LibraryDataSetTableAdapters.CirculatedCopyTableAdapter();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtLastName = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.txtCity = new System.Windows.Forms.TextBox();
-            this.txtState = new System.Windows.Forms.TextBox();
-            this.txtCountry = new System.Windows.Forms.TextBox();
-            this.lbName = new System.Windows.Forms.Label();
             this.albumid_order = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.title_order = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.price_order = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.amount_order = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.total = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btBack = new System.Windows.Forms.Button();
+            this.btSubmit = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lbName = new System.Windows.Forms.Label();
+            this.circulatedCopyTableAdapter1 = new Group4_Project.LibraryDataSetTableAdapters.CirculatedCopyTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -255,6 +255,33 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "User";
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(6, 227);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(80, 21);
+            this.label11.TabIndex = 24;
+            this.label11.Text = "Country :";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(6, 192);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(56, 21);
+            this.label10.TabIndex = 24;
+            this.label10.Text = "State :";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(6, 157);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(50, 21);
+            this.label9.TabIndex = 24;
+            this.label9.Text = "City :";
+            // 
             // btEdit
             // 
             this.btEdit.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -284,6 +311,33 @@
             this.txtPhone.TabIndex = 1;
             this.txtPhone.Text = "0966 848 112";
             // 
+            // txtCountry
+            // 
+            this.txtCountry.Location = new System.Drawing.Point(108, 224);
+            this.txtCountry.Name = "txtCountry";
+            this.txtCountry.ReadOnly = true;
+            this.txtCountry.Size = new System.Drawing.Size(174, 29);
+            this.txtCountry.TabIndex = 1;
+            this.txtCountry.Text = "Viet Nam";
+            // 
+            // txtState
+            // 
+            this.txtState.Location = new System.Drawing.Point(108, 184);
+            this.txtState.Name = "txtState";
+            this.txtState.ReadOnly = true;
+            this.txtState.Size = new System.Drawing.Size(174, 29);
+            this.txtState.TabIndex = 1;
+            this.txtState.Text = "Ha Noi";
+            // 
+            // txtCity
+            // 
+            this.txtCity.Location = new System.Drawing.Point(108, 149);
+            this.txtCity.Name = "txtCity";
+            this.txtCity.ReadOnly = true;
+            this.txtCity.Size = new System.Drawing.Size(174, 29);
+            this.txtCity.TabIndex = 1;
+            this.txtCity.Text = "Ha Noi";
+            // 
             // txtAddress
             // 
             this.txtAddress.Location = new System.Drawing.Point(108, 115);
@@ -292,6 +346,15 @@
             this.txtAddress.Size = new System.Drawing.Size(174, 29);
             this.txtAddress.TabIndex = 1;
             this.txtAddress.Text = "Ha Noi";
+            // 
+            // txtLastName
+            // 
+            this.txtLastName.Location = new System.Drawing.Point(108, 73);
+            this.txtLastName.Name = "txtLastName";
+            this.txtLastName.ReadOnly = true;
+            this.txtLastName.Size = new System.Drawing.Size(174, 29);
+            this.txtLastName.TabIndex = 1;
+            this.txtLastName.Text = "Quan";
             // 
             // txtFirstName
             // 
@@ -328,6 +391,15 @@
             this.label3.Size = new System.Drawing.Size(82, 21);
             this.label3.TabIndex = 0;
             this.label3.Text = "Address :";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(6, 76);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(99, 21);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Last Name :";
             // 
             // label2
             // 
@@ -403,140 +475,6 @@
             this.dataGridView2.Size = new System.Drawing.Size(565, 243);
             this.dataGridView2.TabIndex = 0;
             // 
-            // panel2
-            // 
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.btBack);
-            this.panel2.Controls.Add(this.btSubmit);
-            this.panel2.Controls.Add(this.groupBox1);
-            this.panel2.Controls.Add(this.groupBox2);
-            this.panel2.Location = new System.Drawing.Point(12, 438);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(961, 579);
-            this.panel2.TabIndex = 22;
-            this.panel2.Visible = false;
-            // 
-            // btBack
-            // 
-            this.btBack.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btBack.Location = new System.Drawing.Point(184, 403);
-            this.btBack.Name = "btBack";
-            this.btBack.Size = new System.Drawing.Size(122, 33);
-            this.btBack.TabIndex = 22;
-            this.btBack.Text = "Back";
-            this.btBack.UseVisualStyleBackColor = true;
-            this.btBack.Click += new System.EventHandler(this.btBack_Click);
-            // 
-            // btSubmit
-            // 
-            this.btSubmit.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btSubmit.Location = new System.Drawing.Point(622, 403);
-            this.btSubmit.Name = "btSubmit";
-            this.btSubmit.Size = new System.Drawing.Size(151, 33);
-            this.btSubmit.TabIndex = 22;
-            this.btSubmit.Text = "Submit";
-            this.btSubmit.UseVisualStyleBackColor = true;
-            this.btSubmit.Click += new System.EventHandler(this.btSubmit_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.lbName);
-            this.panel1.Controls.Add(this.dataGridView1);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.btCheckOut);
-            this.panel1.Controls.Add(this.lbNumberCart);
-            this.panel1.Controls.Add(this.btClose);
-            this.panel1.Location = new System.Drawing.Point(96, 39);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(795, 393);
-            this.panel1.TabIndex = 23;
-            // 
-            // circulatedCopyTableAdapter1
-            // 
-            this.circulatedCopyTableAdapter1.ClearBeforeFill = true;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(6, 76);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(99, 21);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "Last Name :";
-            // 
-            // txtLastName
-            // 
-            this.txtLastName.Location = new System.Drawing.Point(108, 73);
-            this.txtLastName.Name = "txtLastName";
-            this.txtLastName.ReadOnly = true;
-            this.txtLastName.Size = new System.Drawing.Size(174, 29);
-            this.txtLastName.TabIndex = 1;
-            this.txtLastName.Text = "Quan";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(6, 157);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(50, 21);
-            this.label9.TabIndex = 24;
-            this.label9.Text = "City :";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(6, 192);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(56, 21);
-            this.label10.TabIndex = 24;
-            this.label10.Text = "State :";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(6, 227);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(80, 21);
-            this.label11.TabIndex = 24;
-            this.label11.Text = "Country :";
-            // 
-            // txtCity
-            // 
-            this.txtCity.Location = new System.Drawing.Point(108, 149);
-            this.txtCity.Name = "txtCity";
-            this.txtCity.ReadOnly = true;
-            this.txtCity.Size = new System.Drawing.Size(174, 29);
-            this.txtCity.TabIndex = 1;
-            this.txtCity.Text = "Ha Noi";
-            // 
-            // txtState
-            // 
-            this.txtState.Location = new System.Drawing.Point(108, 184);
-            this.txtState.Name = "txtState";
-            this.txtState.ReadOnly = true;
-            this.txtState.Size = new System.Drawing.Size(174, 29);
-            this.txtState.TabIndex = 1;
-            this.txtState.Text = "Ha Noi";
-            // 
-            // txtCountry
-            // 
-            this.txtCountry.Location = new System.Drawing.Point(108, 224);
-            this.txtCountry.Name = "txtCountry";
-            this.txtCountry.ReadOnly = true;
-            this.txtCountry.Size = new System.Drawing.Size(174, 29);
-            this.txtCountry.TabIndex = 1;
-            this.txtCountry.Text = "Viet Nam";
-            // 
-            // lbName
-            // 
-            this.lbName.AutoSize = true;
-            this.lbName.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbName.Location = new System.Drawing.Point(535, 15);
-            this.lbName.Name = "lbName";
-            this.lbName.Size = new System.Drawing.Size(138, 21);
-            this.lbName.TabIndex = 20;
-            this.lbName.Text = "Name of account";
-            // 
             // albumid_order
             // 
             this.albumid_order.DataPropertyName = "albumid";
@@ -577,16 +515,79 @@
             this.total.ReadOnly = true;
             this.total.Width = 73;
             // 
+            // panel2
+            // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.btBack);
+            this.panel2.Controls.Add(this.btSubmit);
+            this.panel2.Controls.Add(this.groupBox1);
+            this.panel2.Controls.Add(this.groupBox2);
+            this.panel2.Location = new System.Drawing.Point(12, 464);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(961, 466);
+            this.panel2.TabIndex = 22;
+            this.panel2.Visible = false;
+            // 
+            // btBack
+            // 
+            this.btBack.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btBack.Location = new System.Drawing.Point(184, 403);
+            this.btBack.Name = "btBack";
+            this.btBack.Size = new System.Drawing.Size(122, 33);
+            this.btBack.TabIndex = 22;
+            this.btBack.Text = "Back";
+            this.btBack.UseVisualStyleBackColor = true;
+            this.btBack.Click += new System.EventHandler(this.btBack_Click);
+            // 
+            // btSubmit
+            // 
+            this.btSubmit.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSubmit.Location = new System.Drawing.Point(622, 403);
+            this.btSubmit.Name = "btSubmit";
+            this.btSubmit.Size = new System.Drawing.Size(151, 33);
+            this.btSubmit.TabIndex = 22;
+            this.btSubmit.Text = "Submit";
+            this.btSubmit.UseVisualStyleBackColor = true;
+            this.btSubmit.Click += new System.EventHandler(this.btSubmit_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.lbName);
+            this.panel1.Controls.Add(this.dataGridView1);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.btCheckOut);
+            this.panel1.Controls.Add(this.lbNumberCart);
+            this.panel1.Controls.Add(this.btClose);
+            this.panel1.Location = new System.Drawing.Point(96, 39);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(795, 393);
+            this.panel1.TabIndex = 23;
+            // 
+            // lbName
+            // 
+            this.lbName.AutoSize = true;
+            this.lbName.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbName.Location = new System.Drawing.Point(535, 15);
+            this.lbName.Name = "lbName";
+            this.lbName.Size = new System.Drawing.Size(138, 21);
+            this.lbName.TabIndex = 20;
+            this.lbName.Text = "Name of account";
+            // 
+            // circulatedCopyTableAdapter1
+            // 
+            this.circulatedCopyTableAdapter1.ClearBeforeFill = true;
+            // 
             // MyCartForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(994, 450);
+            this.ClientSize = new System.Drawing.Size(994, 460);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Name = "MyCartForm";
             this.Text = "MyCartGUI";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MyCartForm_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

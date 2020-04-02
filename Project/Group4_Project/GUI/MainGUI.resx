@@ -121,7 +121,7 @@
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="bookToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="AlbumToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAABGdBTUEAALGPC/xhBQAAAIRQTFRFAAAA
         ////1NTUgoKCJCQk7+/v4ODglpaWxsbGhYWF19fX5OTk3NzcV1dXk5OT6enpaGhor6+vvr6++fn5ra2t
@@ -160,7 +160,7 @@
         TkSuQmCC
 </value>
   </data>
-  <data name="memberToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="MyAccountToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAABGdBTUEAALGPC/xhBQAAAIFQTFRFAAAA
         ////8vLyjIyM+fn5XFxc9fX1+Pj4/Pz8hYWFV1dXdXV18fHx5ubmb29v7Ozsl5eX0tLSNzc33t7eS0tL
@@ -221,7 +221,7 @@
         QmCC
 </value>
   </data>
-  <data name="borrowToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="LoginToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAN4AAADjCAMAAADdXVr2AAAABGdBTUEAALGPC/xhBQAAAIRQTFRFAAAA
         /////v7+7e3t7Ozs9/f3+vr67+/v9fX1/f398vLy6enp1tbWIiIiJSUlZ2dnCwsLYGBgc3NzfHx8w8PD

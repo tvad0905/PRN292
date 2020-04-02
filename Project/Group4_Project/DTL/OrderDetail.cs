@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab3.DTL
+namespace Group4_Project.DTL
 {
     public class OrderDetail
     {

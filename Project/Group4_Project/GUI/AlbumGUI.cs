@@ -11,18 +11,31 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Group4_Project.DAL;
-using Lab3.DTL;
+using Group4_Project.DTL;
 
 namespace Group4_Project.GUI
 {
     public partial class AlbumGUI : Form
     {
+        MainGUI m;
         DataTable dt_list = new DataTable();
         int check = 0;
         int accountid = 0;
-        Account a = new Account(2, "Quan", "Nguyen", "Ha Noi", "Ha Noi", "Hoa Lac", "Viet Nam", "0966 848 112","quannd@gmail.com", "1");
-        public AlbumGUI()
+        Account a = new Account();
+        public Account A
         {
+            get { return this.a; }
+            set { this.a = value; }
+        }
+        public void setName()
+        {
+            lbName.Visible = true;
+            lbName.Text = "Hello, " + a.firstname + " " + a.lastname;
+        }
+        public AlbumGUI(MainGUI m)
+        {
+            this.m = m;
+            this.a = m.A;
             dt_list.Columns.Add(new DataColumn("albumid", typeof(int)));
             dt_list.Columns.Add(new DataColumn("title", typeof(string)));
             dt_list.Columns.Add(new DataColumn("price", typeof(float)));
@@ -63,7 +76,15 @@ namespace Group4_Project.GUI
 
         public void loadData()
         {
-            lbName.Text = "Hello, " + a.firstname + " " + a.lastname;
+            if (a.username != null && a.username != "")
+            {
+                lbName.Visible = true;
+                lbName.Text = "Hello, " + a.firstname + " " + a.lastname;
+            }
+            else
+            {
+                lbName.Visible = false;
+            }
             check++;
             try
             {
@@ -123,7 +144,7 @@ namespace Group4_Project.GUI
 
         private void btMyCart_Click(object sender, EventArgs e)
         {
-            MyCartForm mc = new MyCartForm(dt_list, a);
+            MyCartForm mc = new MyCartForm(dt_list, this.a, this.m, this);
             mc.ShowDialog();
         }
     }

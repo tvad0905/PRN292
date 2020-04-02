@@ -1,5 +1,5 @@
-﻿using Lab3.DAL;
-using Lab3.DTL;
+﻿using Group4_Project.DAL;
+using Group4_Project.DTL;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,16 +10,36 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Lab3.GUI
+namespace Group4_Project.GUI
 {
     public partial class MyAccountGUI : Form
     {
-        Account a = new Account(2, "Quan", "Nguyen", "Ha Noi", "Ha Noi", "Hoa Lac", "Viet Nam", "0966 848 112", "quannd@gmail.com", "1");
-        public MyAccountGUI()
+        Account a = new Account();
+        public MyAccountGUI(Account a)
         {
             InitializeComponent();
+            this.a = a;
+            if (a.username == "" || a.username == null)
+            {
+                MessageBox.Show("You need to login to see your account !!!");
+                this.Enabled = false;
+                return;
+            }
+            txtFirstName.Text = a.firstname;
+            txtLastName.Text = a.lastname;
+            txtAddress.Text = a.address;
+            txtCity.Text = a.city;
+            txtState.Text = a.state;
+            txtCountry.Text = a.country;
+            txtPhone.Text = a.phone;
+            txtEmail.Text = a.email;
         }
-
+        /*
+        public MyAccountGUI(Account a) : this()
+        {
+            
+        }
+        */
         private void btEdit_Click(object sender, EventArgs e)
         {
             displayUser();

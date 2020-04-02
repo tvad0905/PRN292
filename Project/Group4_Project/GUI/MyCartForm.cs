@@ -1,6 +1,6 @@
 ﻿using Group4_Project.DTL;
-using Lab3.DAL;
-using Lab3.DTL;
+using Group4_Project.DAL;
+using Group4_Project.DTL;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,18 +15,23 @@ namespace Group4_Project.GUI
 {
     public partial class MyCartForm : Form
     {
+        MainGUI m;
+        AlbumGUI agui;
         DataTable dt;
         int numberOfCart = 0;
-        Account a;
-        public MyCartForm()
+        Account a = new Account();
+        public Account A
+        {
+            get { return this.a; }
+            set { this.a = value; }
+        }
+        public MyCartForm(DataTable dt, Account a, MainGUI m, AlbumGUI agui)
         {
             InitializeComponent();
-            displayPanel(1);
-        }
-
-        public MyCartForm(DataTable dt, Account a) : this()
-        {
+            
+            this.m = m;
             this.a = a;
+            this.agui = agui;
             this.dt = dt;
             foreach(DataRow dr in dt.Rows)
             {
@@ -34,8 +39,7 @@ namespace Group4_Project.GUI
             }
             lbNumberCart.Text = numberOfCart.ToString();
             dataGridView1.DataSource = dt;
-
-            lbName.Text = "Hello, " + a.firstname + " " + a.lastname;
+            displayPanel(1);
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -96,19 +100,19 @@ namespace Group4_Project.GUI
                 }
                 txtTotalAmount.Text = total_amount.ToString("C2");
                 dataGridView2.DataSource = dt1;
-                setText(a);
+                setText();
             }
         }
-        public void setText(Account a)
+        public void setText()
         {
-            txtFirstName.Text = a.firstname;
-            txtLastName.Text = a.lastname;
-            txtAddress.Text = a.address;
-            txtCity.Text = a.city;
-            txtState.Text = a.state;
-            txtCountry.Text = a.country;
-            txtPhone.Text = a.phone;
-            txtEmail.Text = a.email;
+            txtFirstName.Text = this.a.firstname;
+            txtLastName.Text = this.a.lastname;
+            txtAddress.Text = this.a.address;
+            txtCity.Text = this.a.city;
+            txtState.Text = this.a.state;
+            txtCountry.Text = this.a.country;
+            txtPhone.Text = this.a.phone;
+            txtEmail.Text = this.a.email;
         }
 
         public void displayPanel(int n)
@@ -117,6 +121,15 @@ namespace Group4_Project.GUI
             {
                 case 1:
                     {
+                        if (a.username != null && a.username != "")
+                        {
+                            lbName.Visible = true;
+                            lbName.Text = "Hello, " + a.firstname + " " + a.lastname;
+                        }
+                        else
+                        {
+                            lbName.Visible = false;
+                        }
                         panel1.Enabled = true;
                         panel2.Visible = false;
                         panel1.Focus();
@@ -169,6 +182,16 @@ namespace Group4_Project.GUI
         private void btSubmit_Click(object sender, EventArgs e)
         {
             // update order database
+            if (a.username == null || a.username == "")
+            {
+                DialogResult dr = MessageBox.Show("You have to login to checkout !!", "Notification", MessageBoxButtons.YesNo);
+                if(dr == DialogResult.Yes)
+                {
+                    LoginGUI lgui = new LoginGUI(this.m, this);
+                    lgui.Show();
+                    return;
+                }
+            }
             Order or = new Order(dateTimePicker1.Value, txtFirstName.Text, txtLastName.Text, txtAddress.Text,
                 txtCity.Text, txtState.Text, txtCountry.Text, txtPhone.Text, txtEmail.Text, total_amount);
             OrderDAO.Insert(or);
@@ -191,6 +214,12 @@ namespace Group4_Project.GUI
                 MessageBox.Show("Checkout Error !!! Try Again !!!", "Notification !!!", MessageBoxButtons.OK);
             }
             
+        }
+
+        private void MyCartForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            agui.A = this.a;
+            agui.setName();
         }
     }
 }

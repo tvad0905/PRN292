@@ -1,4 +1,4 @@
-﻿namespace Lab3.GUI
+﻿namespace Group4_Project.GUI
 {
     partial class MyAccountGUI
     {
@@ -151,7 +151,6 @@
             this.txtEmail.ReadOnly = true;
             this.txtEmail.Size = new System.Drawing.Size(234, 29);
             this.txtEmail.TabIndex = 1;
-            this.txtEmail.Text = "quanndhe130577@fpt.edu.vn";
             // 
             // label4
             // 
@@ -169,7 +168,6 @@
             this.txtPhone.ReadOnly = true;
             this.txtPhone.Size = new System.Drawing.Size(122, 29);
             this.txtPhone.TabIndex = 1;
-            this.txtPhone.Text = "0966 848 112";
             // 
             // label5
             // 
@@ -187,7 +185,6 @@
             this.txtCountry.ReadOnly = true;
             this.txtCountry.Size = new System.Drawing.Size(174, 29);
             this.txtCountry.TabIndex = 1;
-            this.txtCountry.Text = "Viet Nam";
             // 
             // txtFirstName
             // 
@@ -196,7 +193,6 @@
             this.txtFirstName.ReadOnly = true;
             this.txtFirstName.Size = new System.Drawing.Size(174, 29);
             this.txtFirstName.TabIndex = 1;
-            this.txtFirstName.Text = "Nguyen";
             // 
             // txtState
             // 
@@ -205,7 +201,6 @@
             this.txtState.ReadOnly = true;
             this.txtState.Size = new System.Drawing.Size(174, 29);
             this.txtState.TabIndex = 1;
-            this.txtState.Text = "Ha Noi";
             // 
             // txtLastName
             // 
@@ -214,7 +209,6 @@
             this.txtLastName.ReadOnly = true;
             this.txtLastName.Size = new System.Drawing.Size(174, 29);
             this.txtLastName.TabIndex = 1;
-            this.txtLastName.Text = "Quan";
             // 
             // txtCity
             // 
@@ -223,7 +217,6 @@
             this.txtCity.ReadOnly = true;
             this.txtCity.Size = new System.Drawing.Size(174, 29);
             this.txtCity.TabIndex = 1;
-            this.txtCity.Text = "Ha Noi";
             // 
             // txtAddress
             // 
@@ -232,7 +225,6 @@
             this.txtAddress.ReadOnly = true;
             this.txtAddress.Size = new System.Drawing.Size(174, 29);
             this.txtAddress.TabIndex = 1;
-            this.txtAddress.Text = "Ha Noi";
             // 
             // pictureBox1
             // 

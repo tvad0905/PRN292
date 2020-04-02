@@ -30,9 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainGUI));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.bookToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.memberToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.borrowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.AlbumToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MyAccountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.LoginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.returnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reserveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -47,9 +47,9 @@
             this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(50, 50);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bookToolStripMenuItem,
-            this.memberToolStripMenuItem,
-            this.borrowToolStripMenuItem,
+            this.AlbumToolStripMenuItem,
+            this.MyAccountToolStripMenuItem,
+            this.LoginToolStripMenuItem,
             this.returnToolStripMenuItem,
             this.reserveToolStripMenuItem,
             this.aboutToolStripMenuItem});
@@ -59,29 +59,29 @@
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // bookToolStripMenuItem
+            // AlbumToolStripMenuItem
             // 
-            this.bookToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("bookToolStripMenuItem.Image")));
-            this.bookToolStripMenuItem.Name = "bookToolStripMenuItem";
-            this.bookToolStripMenuItem.Size = new System.Drawing.Size(105, 54);
-            this.bookToolStripMenuItem.Text = "Album";
-            this.bookToolStripMenuItem.Click += new System.EventHandler(this.bookToolStripMenuItem_Click);
+            this.AlbumToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("AlbumToolStripMenuItem.Image")));
+            this.AlbumToolStripMenuItem.Name = "AlbumToolStripMenuItem";
+            this.AlbumToolStripMenuItem.Size = new System.Drawing.Size(105, 54);
+            this.AlbumToolStripMenuItem.Text = "Album";
+            this.AlbumToolStripMenuItem.Click += new System.EventHandler(this.AlbumToolStripMenuItem_Click);
             // 
-            // memberToolStripMenuItem
+            // MyAccountToolStripMenuItem
             // 
-            this.memberToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("memberToolStripMenuItem.Image")));
-            this.memberToolStripMenuItem.Name = "memberToolStripMenuItem";
-            this.memberToolStripMenuItem.Size = new System.Drawing.Size(134, 54);
-            this.memberToolStripMenuItem.Text = "My Account";
-            this.memberToolStripMenuItem.Click += new System.EventHandler(this.memberToolStripMenuItem_Click);
+            this.MyAccountToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("MyAccountToolStripMenuItem.Image")));
+            this.MyAccountToolStripMenuItem.Name = "MyAccountToolStripMenuItem";
+            this.MyAccountToolStripMenuItem.Size = new System.Drawing.Size(134, 54);
+            this.MyAccountToolStripMenuItem.Text = "My Account";
+            this.MyAccountToolStripMenuItem.Click += new System.EventHandler(this.MyAccountToolStripMenuItem_Click);
             // 
-            // borrowToolStripMenuItem
+            // LoginToolStripMenuItem
             // 
-            this.borrowToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("borrowToolStripMenuItem.Image")));
-            this.borrowToolStripMenuItem.Name = "borrowToolStripMenuItem";
-            this.borrowToolStripMenuItem.Size = new System.Drawing.Size(118, 54);
-            this.borrowToolStripMenuItem.Text = "Updating";
-            this.borrowToolStripMenuItem.Click += new System.EventHandler(this.borrowToolStripMenuItem_Click);
+            this.LoginToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("LoginToolStripMenuItem.Image")));
+            this.LoginToolStripMenuItem.Name = "LoginToolStripMenuItem";
+            this.LoginToolStripMenuItem.Size = new System.Drawing.Size(99, 54);
+            this.LoginToolStripMenuItem.Text = "Login";
+            this.LoginToolStripMenuItem.Click += new System.EventHandler(this.LoginToolStripMenuItem_Click);
             // 
             // returnToolStripMenuItem
             // 
@@ -147,9 +147,9 @@
 
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripContainer toolStripContainer1;
-        private System.Windows.Forms.ToolStripMenuItem bookToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem memberToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem borrowToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem AlbumToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem MyAccountToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem LoginToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem returnToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reserveToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;

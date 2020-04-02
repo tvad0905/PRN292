@@ -1,4 +1,5 @@
-﻿using Lab3.GUI;
+﻿using Group4_Project.DTL;
+using Group4_Project.GUI;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,15 +14,25 @@ namespace Group4_Project.GUI
 {
     public partial class MainGUI : Form
     {
+        Account a = new Account();
+        public Account A
+        {
+            get { return this.a; }
+            set { this.a = value; }
+        }
+        public void removeAccount()
+        {
+            this.a = new Account();
+        }
         public MainGUI()
         {
             InitializeComponent();
             embed(toolStripContainer1.ContentPanel, new AboutGUI());
         }
 
-        private void bookToolStripMenuItem_Click(object sender, EventArgs e)
+        private void AlbumToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AlbumGUI f = new AlbumGUI();
+            AlbumGUI f = new AlbumGUI(this);
             embed(toolStripContainer1.ContentPanel, f);
 
         }
@@ -43,16 +54,16 @@ namespace Group4_Project.GUI
 
         }
 
-        private void memberToolStripMenuItem_Click(object sender, EventArgs e)
+        private void MyAccountToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MyAccountGUI m = new MyAccountGUI();
+            MyAccountGUI m = new MyAccountGUI(this.a);
             embed(toolStripContainer1.ContentPanel, m);
         }
 
-        private void borrowToolStripMenuItem_Click(object sender, EventArgs e)
+        private void LoginToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //MyCartGUI  m = new MyCartGUI();
-            //embed(toolStripContainer1.ContentPanel, m);
+            LoginGUI  m = new LoginGUI(this);
+            embed(toolStripContainer1.ContentPanel, m);
         }
 
         private void returnToolStripMenuItem_Click(object sender, EventArgs e)

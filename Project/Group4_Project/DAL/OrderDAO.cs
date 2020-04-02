@@ -1,5 +1,5 @@
 ﻿using Group4_Project.DAL;
-using Lab3.DTL;
+using Group4_Project.DTL;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab3.DAL
+namespace Group4_Project.DAL
 {
     class OrderDAO : DAO
     {
