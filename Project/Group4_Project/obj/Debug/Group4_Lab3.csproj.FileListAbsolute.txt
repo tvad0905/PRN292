@@ -1,0 +1,42 @@
+E:\Ki5\PRN292\Thuc Hanh\Lab 3\Group4_Lab3\bin\Debug\Lab3.exe.config
+E:\Ki5\PRN292\Thuc Hanh\Lab 3\Group4_Lab3\bin\Debug\Lab3.exe
+E:\Ki5\PRN292\Thuc Hanh\Lab 3\Group4_Lab3\bin\Debug\Lab3.pdb
+E:\Ki5\PRN292\Thuc Hanh\Lab 3\Group4_Lab3\obj\Debug\Group4_Lab3.csprojAssemblyReference.cache
+E:\Ki5\PRN292\Thuc Hanh\Lab 3\Group4_Lab3\obj\Debug\Lab3.GUI.AboutGUI.resources
+E:\Ki5\PRN292\Thuc Hanh\Lab 3\Group4_Lab3\obj\Debug\Lab3.GUI.BookGUI.resources
+E:\Ki5\PRN292\Thuc Hanh\Lab 3\Group4_Lab3\obj\Debug\Lab3.GUI.BorrowGUI.resources
+E:\Ki5\PRN292\Thuc Hanh\Lab 3\Group4_Lab3\obj\Debug\Lab3.GUI.BorrowerGUI.resources
+E:\Ki5\PRN292\Thuc Hanh\Lab 3\Group4_Lab3\obj\Debug\Lab3.GUI.MainGUI.resources
+E:\Ki5\PRN292\Thuc Hanh\Lab 3\Group4_Lab3\obj\Debug\Lab3.GUI.ReserveGUI.resources
+E:\Ki5\PRN292\Thuc Hanh\Lab 3\Group4_Lab3\obj\Debug\Lab3.GUI.ReturnGUI.resources
+E:\Ki5\PRN292\Thuc Hanh\Lab 3\Group4_Lab3\obj\Debug\Lab3.Properties.Resources.resources
+E:\Ki5\PRN292\Thuc Hanh\Lab 3\Group4_Lab3\obj\Debug\Group4_Lab3.csproj.GenerateResource.cache
+E:\Ki5\PRN292\Thuc Hanh\Lab 3\Group4_Lab3\obj\Debug\Lab3.exe
+E:\Ki5\PRN292\Thuc Hanh\Lab 3\Group4_Lab3\obj\Debug\Lab3.pdb
+E:\Ki5\PRN292\Thuc Hanh\SE1316_Group4_Lab3\Group4_Lab3\bin\Debug\Lab3.exe.config
+E:\Ki5\PRN292\Thuc Hanh\SE1316_Group4_Lab3\Group4_Lab3\bin\Debug\Lab3.exe
+E:\Ki5\PRN292\Thuc Hanh\SE1316_Group4_Lab3\Group4_Lab3\bin\Debug\Lab3.pdb
+E:\Ki5\PRN292\Thuc Hanh\SE1316_Group4_Lab3\Group4_Lab3\obj\Debug\Group4_Lab3.csprojAssemblyReference.cache
+E:\Ki5\PRN292\Thuc Hanh\SE1316_Group4_Lab3\Group4_Lab3\obj\Debug\Group4_Lab3.GUI.AboutGUI.resources
+E:\Ki5\PRN292\Thuc Hanh\SE1316_Group4_Lab3\Group4_Lab3\obj\Debug\Group4_Lab3.GUI.BookGUI.resources
+E:\Ki5\PRN292\Thuc Hanh\SE1316_Group4_Lab3\Group4_Lab3\obj\Debug\Group4_Lab3.GUI.BorrowGUI.resources
+E:\Ki5\PRN292\Thuc Hanh\SE1316_Group4_Lab3\Group4_Lab3\obj\Debug\Group4_Lab3.GUI.BorrowerGUI.resources
+E:\Ki5\PRN292\Thuc Hanh\SE1316_Group4_Lab3\Group4_Lab3\obj\Debug\Group4_Lab3.GUI.MainGUI.resources
+E:\Ki5\PRN292\Thuc Hanh\SE1316_Group4_Lab3\Group4_Lab3\obj\Debug\Group4_Lab3.GUI.ReserveGUI.resources
+E:\Ki5\PRN292\Thuc Hanh\SE1316_Group4_Lab3\Group4_Lab3\obj\Debug\Group4_Lab3.GUI.ReturnGUI.resources
+E:\Ki5\PRN292\Thuc Hanh\SE1316_Group4_Lab3\Group4_Lab3\obj\Debug\Lab3.Properties.Resources.resources
+E:\Ki5\PRN292\Thuc Hanh\SE1316_Group4_Lab3\Group4_Lab3\obj\Debug\Group4_Lab3.csproj.GenerateResource.cache
+E:\Ki5\PRN292\Thuc Hanh\SE1316_Group4_Lab3\Group4_Lab3\obj\Debug\Lab3.exe
+E:\Ki5\PRN292\Thuc Hanh\SE1316_Group4_Lab3\Group4_Lab3\obj\Debug\Lab3.pdb
+E:\Ki5\PRN292\Thuc Hanh\SE1316_Group4_Lab3\Group4_Lab3\obj\Debug\Group4_Lab3.csproj.CoreCompileInputs.cache
+E:\Ki5\PRN292\Thuc Hanh\Lab - PRN292\PRN292\Project\Group4_Lab3\obj\Debug\Group4_Lab3.GUI.AboutGUI.resources
+E:\Ki5\PRN292\Thuc Hanh\Lab - PRN292\PRN292\Project\Group4_Lab3\obj\Debug\Group4_Lab3.GUI.MainGUI.resources
+E:\Ki5\PRN292\Thuc Hanh\Lab - PRN292\PRN292\Project\Group4_Lab3\obj\Debug\Lab3.Properties.Resources.resources
+E:\Ki5\PRN292\Thuc Hanh\Lab - PRN292\PRN292\Project\Group4_Lab3\obj\Debug\Group4_Lab3.csproj.GenerateResource.cache
+E:\Ki5\PRN292\Thuc Hanh\Lab - PRN292\PRN292\Project\Group4_Lab3\obj\Debug\Group4_Lab3.csproj.CoreCompileInputs.cache
+E:\Ki5\PRN292\Thuc Hanh\Lab - PRN292\PRN292\Project\Group4_Lab3\obj\Debug\Lab3.exe
+E:\Ki5\PRN292\Thuc Hanh\Lab - PRN292\PRN292\Project\Group4_Lab3\obj\Debug\Lab3.pdb
+E:\Ki5\PRN292\Thuc Hanh\Lab - PRN292\PRN292\Project\Group4_Lab3\bin\Debug\Lab3.exe.config
+E:\Ki5\PRN292\Thuc Hanh\Lab - PRN292\PRN292\Project\Group4_Lab3\bin\Debug\Lab3.exe
+E:\Ki5\PRN292\Thuc Hanh\Lab - PRN292\PRN292\Project\Group4_Lab3\bin\Debug\Lab3.pdb
+E:\Ki5\PRN292\Thuc Hanh\Lab - PRN292\PRN292\Project\Group4_Lab3\obj\Debug\Group4_Lab3.GUI.AlbumGUI.resources
